@@ -1,6 +1,6 @@
 'use client';
 
-// import { BackgroundBeams } from "./ui/background-beams";
+import { BackgroundBeams } from "./ui/background-beams";
 import Lottie from "lottie-react";
 import summary from "../assets/summary.json";
 
@@ -13,7 +13,7 @@ const Hero = () => {
         <Lottie animationData={summary} loop={true} />
       </div>
       
-      {/* <BackgroundBeams /> */}
+      <BackgroundBeams />
     </div>
   );
 };
