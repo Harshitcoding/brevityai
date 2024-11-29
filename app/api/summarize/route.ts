@@ -38,7 +38,7 @@ export async function POST(request: Request) {
       history: [],
     });
 
-    const prompt = `Please summarize the following text concisely while maintaining the key points: ${text}`;
+    const prompt = `Summarize the following text in a clear and concise manner, ensuring all key points are included. Please respond in a natural, conversational tone, as if a person is answering : ${text}`;
     
     const result = await chatSession.sendMessage(prompt);
     const summary = result.response.text();
